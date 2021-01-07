@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Task-2 (HTML/CSS)
+        </title>
+        <style>
+                *{
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+               .leftdiv {
+                float: left;
+                width: 65%;
+                margin-left: 10px;
+                margin-right: 10px;
+               }
+                .rightdiv 
+                { 
+                float: right; 
+                width: 30%;   
+                margin-left: 10px;
+                margin-right: 10px;
+                height: 500px;
+                background-color: rgb(236, 251, 252);
+                word-wrap: normal;
+                
+               margin-top: 100px;
+
+                }     
+                input[type=text], [type=email] {
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    }
+        </style>
+    </head>
+    <body>
+            <img src="1.png" alt="logo" width="100px" heigth="80px" />
+                <hr style="color: black;">
+            
+            <div class="leftdiv">
+                <form>
+                   <h2>Checkout</h2>
+                   <h4>Shipping Address</h4>
+                   <hr><br>
+                   <label for="email">Email Address :</label><br>
+                   <input type="email" name="email" id="email"/><br><br>
+                   <label>You can create an account after checkout</label><br>
+                   <hr><br>
+                   <label for="fname">First name :</label><br>
+                   <input type="text" name="fname" id="fname"/><br><br>
+                   <label for="lname">Last name :</label><br>
+                   <input type="text" name="lname" id="lname"/><br><br>
+                   <label for="company">Company :</label><br>
+                   <input type="text" name="company" id="company"/><br><br>
+                   <label for="add">Address :</label><br>
+                   <input type="text" name="add1" id="add1"/><br><br>
+                   <input type="text" name="add2" id="add2"/><br><br>
+                   <label for="city">City :</label><br>
+                   <input type="text" name="city" id="city"/><br><br>
+                   <label for="state">State/Province :</label><br>
+                   <select id="state" name="state" 
+                   style=" width: 100%;
+                   padding: 12px 20px;
+                   margin: 8px 0;
+                   display: inline-block;
+                   border: 1px solid #ccc;
+                   border-radius: 4px;
+                   box-sizing: border-box;">
+                       <option>Anand</option>
+                       <option>Ahmedabad</option>
+                       <option>Rajkot</option>
+                       <option>Vadodara</option>
+                       <option>Surat</option>
+                   </select>
+                   <br><br>
+                   <label for="post">Zip/Postal Code :</label><br>
+                   <input type="text" name="post" id="post"/><br><br>
+                   <label for="country">Country :</label><br>
+                   <select id="state" name="state"
+                   style=" width: 100%;
+                   padding: 12px 20px;
+                   margin: 8px 0;
+                   display: inline-block;
+                   border: 1px solid #ccc;
+                   border-radius: 4px;
+                   box-sizing: border-box;">
+                        <option>India</option>
+                        <option>Australia</option>
+                        <option>Canada</option>
+                        <option>Brazil</option>
+                        <option>China</option>
+                    </select>
+                   <label for="mono">Phone Number :</label><br>
+                   <input type="text" name="mono" id="mono"/><br><br>
+
+                   <input type="checkbox" name="sadd" type="sadd"/>
+                   <label for="sadd">My billing and shipping address are the same</label><br><br><br><br>
+
+                   <h3><b>Shipping Methods</b><br></h3>
+                   <hr><br><br>Best way table rate $15.00<br><br>
+
+                   <br>
+                   <h3><b>Payments</b><br></h3>
+                   <hr><br>
+                   <input type="radio" name="pmode" id="cod" value="Cash On Delivery"/>
+                   &nbsp;&nbsp;&nbsp;&nbsp;Cash On Delivery<br>
+                   <hr><br>
+                   <input type="radio" name="pmode" id="pbp" value="Pay by Paypal"/>
+                   &nbsp;&nbsp;&nbsp;&nbsp; Pay by Paypal<br>
+                   <hr><br>
+                   <input type="radio" name="pmode" id="bt" value="Bank Transfer"/>
+                   &nbsp;&nbsp;&nbsp;&nbsp; Bank Transfer<br>
+                   <hr><br>
+                   <input type="radio" name="pmode" id="pbc" value="Pay by Card"/>
+                   &nbsp;&nbsp;&nbsp;&nbsp; Pay by Card<br>
+                   <label for="cname"> Name on Card</label><br>
+                   <input type="text" name="cname" id="cname"/><br>
+                   <label for="cno"> Card Number</label><br>
+                   <input type="text" name="cno" id="cno"/><br>
+                   
+                   <table style="width: 100%;">
+                    <tr>
+                    <td> 
+                   <label for="cno"> Expiration Date</label><br></td>
+                        <td></td>
+                   <td>
+                    <label for="cno"> CVV/CVC</label><br></td> 
+                    <td>
+                    </tr>
+                    <tr>
+                   <td> 
+                    <select id="month" name="month"
+                    style=" width: 100%;
+                   padding: 12px 20px;
+                   margin: 8px 0;
+                   display: inline-block;
+                   border: 1px solid #ccc;
+                   border-radius: 4px;
+                   box-sizing: border-box;">
+                        <option>Month</option> 
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                    </select>
+                   </td><td>
+                    <select id="year" name="year"
+                    style=" width: 100%;
+                   padding: 12px 20px;
+                   margin: 8px 0;
+                   display: inline-block;
+                   border: 1px solid #ccc;
+                   border-radius: 4px;
+                   box-sizing: border-box;">
+                        <option>Year</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                    </select>
+                </td>
+                <td>
+               <input type="text" id="cvv" name="cvv"/>
+                </td>
+                </tr>
+                </table>
+
+                <input type="submit" value="PLACE ORDER" name="submit" id="submit" style="background-color: crimson; width: 200px;height: 40px;color: azure; float: right; font-family: Arial, Helvetica, sans-serif;"/><br><br>
+               </form>
+
+            </div>
+            <div class="rightdiv">
+                <h2 style="margin-left: 20px;">Order Summery</h2>
+                <br><hr><br>
+                <img src="2.jpg" alt="logo" width="100px" heigth="300px" style="margin-left: 20px; float: left;" />
+                <b style="float: left; margin-left: 20px; margin-right: 20px;">Burnishers </b>
+                <b style="float: right;  margin-left: 20px; margin-right: 20px;">$2670.00</b><br><br>
+                <b style="float: left;  margin-left: 20px; margin-right: 20px;">Qty : &nbsp;&nbsp;&nbsp;</b> 1<br><br>
+                <b style="float: left;  margin-left: 20px; margin-right: 20px;">Color :&nbsp;&nbsp;&nbsp;</b>Yellow<br><br><br>
+                <hr>
+                <table style="width: 100%; margin-left: 20px; margin-right: 20px;">
+                    <tr>
+                        <td >
+                            Cart Subtotal
+                        </td>
+                        <td >
+                            $2670.00<br><br>                        </td>
+                    </tr>
+                   <tr></tr> 
+                    <tr>
+                        <td>
+                                Shipping Flat Rate - Fixed
+                        </td>
+                        <td >
+                                $5.00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <hr style="margin-right: 20px; margin-left: -20px;">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Order Total</b>
+                        </td>
+                        <td>
+                            <b>
+                                $2670.00
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+                
+               
+            </div>
+        
+            <br><br><br>
+    </body>
+</html>
