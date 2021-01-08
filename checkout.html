@@ -1,0 +1,304 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>
+      Task-2 (HTML/CSS)
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      *{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      .leftdiv {
+        float: left;
+        width: 65%;
+        margin-left: 10px;
+        margin-right: 5px;
+
+      }
+      .rightdiv 
+      { 
+        float: right; 
+        width: 30%;   
+        margin-left: 10px;
+        margin-right: 5px;
+        height: 500px;
+        background-color: rgb(236, 251, 252);
+        word-wrap: normal;
+
+        margin-top: 100px;
+
+      }   
+
+      input[type=radio]:checked + label + .radio_select_content{
+        display : block;
+      }
+      .radio_select_content{
+       
+        display: none;
+        
+        
+      }
+     
+      input[type=text], [type=email]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type=tel], [type=number]{
+      width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+      }
+
+    </style>
+  </head>
+  <body>
+    <img src="1.png" alt="logo" width="100px" heigth="80px" />
+    <hr style="color: black;">
+
+    <div class="leftdiv">
+      <form> 
+       <h2>Checkout</h2>
+       <h4>Shipping Address</h4>
+       <hr><br>
+       <label for="email">Email Address :</label><br>
+       <input type="email" name="email" id="email"/><br><br>
+       <label>You can create an account after checkout</label><br>
+       <hr><br>
+       <label for="fname">First name :</label><br>
+       <input type="text" name="fname" id="fname"/><br><br>
+       <label for="lname">Last name :</label><br>
+       <input type="text" name="lname" id="lname"/><br><br>
+       <label for="company">Company :</label><br>
+       <input type="text" name="company" id="company"/><br><br>
+       <label for="add">Address :</label><br>
+       <input type="text" name="add1" id="add1"/><br><br>
+       <input type="text" name="add2" id="add2"/><br><br>
+       <label for="city">City :</label><br>
+       <input type="text" name="city" id="city"/><br><br>
+       <label for="state">State/Province :</label><br>
+       <select id="state" name="state" 
+       style=" width: 100%;
+       padding: 12px 20px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;">
+       <option>Anand</option>
+       <option>Ahmedabad</option>
+       <option>Rajkot</option>
+       <option>Vadodara</option>
+       <option>Surat</option>
+     </select>
+     <br><br>
+     <label for="post">Zip/Postal Code :</label><br>
+     <input type="number" name="post" id="post"/><br><br>
+     <label for="country">Country :</label><br>
+     <select id="state" name="state"
+     style=" width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;">
+     <option>India</option>
+     <option>Australia</option>
+     <option>Canada</option>
+     <option>Brazil</option>
+     <option>China</option>
+   </select>
+   <label for="mono">Phone Number :</label><br>
+   <input type="tel" name="mono" id="mono"/><br><br>
+
+   <input type="checkbox" name="sadd" type="sadd"/>
+   <label for="sadd">My billing and shipping address are the same</label><br><br><br><br>
+
+   <h3><b>Shipping Methods</b><br></h3>
+   <hr><br><br>Best way table rate $15.00<br><br>
+
+   <br>
+   <h3><b>Payments</b><br></h3>
+   <hr><br>
+<div class="radio_section">
+    <input name="radio" type="radio" id="rd1">
+    <label for="rd1">Cash On Delivery</label>
+    <div class="radio_select_content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <hr>
+    <input name="radio" type="radio" id="rd2">
+    <label for="rd2">Pay by Paypal</label>
+    <div class="radio_select_content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <hr>
+    <input name="radio" type="radio" id="rd3">
+    <label for="rd3">Bank Transfer</label>
+    <div class="radio_select_content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <hr>
+    <input name="radio" type="radio" id="rd4">
+    <label for="rd4">Pay by Card</label>
+    <div class="radio_select_content">
+     
+        
+      
+       <label for="cname"> Name on Card</label><br>
+       <input type="text" name="cname" id="cname"/><br>
+       <label for="cno"> Card Number</label><br>
+       <input type="text" name="cno" id="cno"/><br>
+       
+       <table style="width: 100%;">
+        <tr>
+        <td> 
+       <label for="cno"> Expiration Date</label><br></td>
+            <td></td>
+       <td>
+        <label for="cno"> CVV/CVC</label><br></td> 
+        <td>
+        </tr>
+        <tr>
+       <td> 
+        <select id="month" name="month"
+        style=" width: 100%;
+       padding: 12px 20px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;">
+            <option>Month</option> 
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+        </select>
+       </td><td>
+        <select id="year" name="year"
+        style=" width: 100%;
+       padding: 12px 20px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;">
+            <option>Year</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+        </select>
+    </td>
+    <td>
+   <input type="text" id="cvv" name="cvv"/>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <hr>
+</div>
+<input type="submit" value="PLACE ORDER" name="submit" id="submit" style="background-color: crimson; width: 200px;height: 40px;color: azure; float: right; font-family: Arial, Helvetica, sans-serif;"/><br><br>
+</div>
+</form>
+</div>
+
+<div class="rightdiv">
+  <h2 style="margin-left: 20px;">Order Summery</h2>
+  <br><hr><br>
+  <img src="2.jpg" alt="logo" width="100px" heigth="300px" style="margin-left: 20px; float: left;" />
+  <b style="float: left; margin-left: 20px; margin-right: 20px;">Burnishers </b>
+  <b style="float: right;  margin-left: 20px; margin-right: 20px;">$2670.00</b><br><br>
+  <b style="float: left;  margin-left: 20px; margin-right: 20px;">Qty : &nbsp;&nbsp;&nbsp;</b> 1<br><br>
+  <b style="float: left;  margin-left: 20px; margin-right: 20px;">Color :&nbsp;&nbsp;&nbsp;</b>Yellow<br><br><br>
+  <hr>
+  <table style="width: 100%; margin-left: 20px; margin-right: 20px;">
+    <tr>
+      <td >
+        Cart Subtotal
+      </td>
+      <td >
+        $2670.00<br><br>                        </td>
+      </tr>
+      <tr></tr> 
+      <tr>
+        <td>
+          Shipping Flat Rate - Fixed
+        </td>
+        <td >
+          $5.00
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <hr style="margin-right: 20px; margin-left: -20px;">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>Order Total</b>
+        </td>
+        <td>
+          <b>
+            $2670.00
+          </b>
+        </td>
+      </tr>
+    </table>
+
+
+  </div>
+
+
+
+</body>
+</html>
