@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+.my_custom_table {
+    display: table;
+    width: 100%;
+ 
+}
+
+.my_custom_table .table_row {
+    display: table-row;
+}
+
+.my_custom_table .custom_th {
+    font-weight: 700;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    float: left;
+    padding: 0;
+}
+
+.my_custom_table .custom_th,
+.my_custom_table .custom_td {
+    display: table-cell;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    vertical-align: middle;
+}
+.col{
+row-span: 3;
+}
+</style>
+</head>
+
+<body>
+    <div class="my_custom_table">
+        <div class="table_row">
+            <div class="custom_th"> Country</div>
+            <div class="custom_th">  Film Title</div>
+            <div class="custom_th"> Released</div>
+            <div class="custom_th">   Votes</div>
+            <div class="custom_th">  Rating</div>
+        </div>
+        <div class="table_row">
+            <div class="custom_td col"> USA</div>
+            <div class="custom_td">The Shawshank Redemption
+            </div>
+            <div class="custom_td"> 1994</div>
+            <div class="custom_td"> 678790</div>
+            <div class="custom_td">9.5</div>
+        </div>
+        <div class="table_row">
+         
+            <div class="custom_td">The Godfather
+            </div>
+            <div class="custom_td">   1972</div>
+            <div class="custom_td"> 511495</div>
+            <div class="custom_td">9.2</div>
+        </div>
+        <div class="table_row">
+           
+            <div class="custom_td"> The Godfather : Part II
+            </div>
+            <div class="custom_td">1974</div>
+            <div class="custom_td"> 319352</div>
+            <div class="custom_td">9</div>
+        </div>
+    </div>
+</body>
+</html>
