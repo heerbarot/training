@@ -5,6 +5,7 @@
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -28,6 +29,9 @@
             }
            .col-sm-5, .col-sm-3{
                margin-top: 30px;
+           }
+           input[type=submit][type=reset]{
+            width: 50px;
            }
     </style>
     </head>
@@ -61,7 +65,7 @@
 
             <div class="row">
             <div class="col-sm-1">
-                <a href="layout4.html" onclick="return confirm('Would you like to see product details?');"><img src="cart1.jpeg" alt="item-1"/>
+                <a href="#popup1"><img src="cart1.jpeg" alt="item-1"/>
                 </a>
             </div>
                 <div class="col-sm-5 align-self-center">
@@ -83,7 +87,7 @@
 
                 <div class="row">
                     <div class="col-sm-1">
-                        <a href="layout4.html" onclick="return confirm('Would you like to see product details?');"><img src="cart2.jpeg" alt="item-1"/>
+                        <a href="#popup1"><img src="cart2.jpeg" alt="item-2"/>
                         </a>
                     </div>
                         <div class="col-sm-5">
@@ -104,7 +108,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-1">
-                                <a href="layout4.html" onclick="return confirm('Would you like to see product details?');"><img src="cart3.jpeg" alt="item-1"/>
+                                <a href="#popup1"><img src="cart3.jpeg" alt="item-3"/>
                                 </a>
                             </div>
                                 <div class="col-sm-5">
@@ -127,7 +131,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-1">
-                                        <a href="layout4.html" onclick="return confirm('Would you like to see product details?');"><img src="cart4.jpeg" alt="item-1"/>
+                                        <a href="#popup1"><img src="cart4.jpeg" alt="item-4"/>
                                         </a>
                                     </div>
                                         <div class="col-sm-5">
@@ -150,7 +154,7 @@
 
                                         <div class="row">
                                             <div class="col-sm-1">
-                                                <a href="layout4.html" onclick="return confirm('Would you like to see product details?');"><img src="cart5.jpeg" alt="item-1"/>
+                                                <a href="#popup1"><img src="cart5.jpeg" alt="item-5"/>
                                                 </a>
                                             </div>
                                                 <div class="col-sm-5">
@@ -174,7 +178,7 @@
 
                                                 <div class="row">
                                                     <div class="col-sm-1">
-                                                        <a href="layout5.html" onclick="return confirm('Would you like to see product details?');"><img src="cart2.jpeg" alt="item-1"/>
+                                                        <a href="#popup1"><img src="cart6.jpeg" alt="item-6"/>
                                                         </a>
                                                     </div>
                                                         <div class="col-sm-5">
@@ -194,7 +198,20 @@
                                                         </div>
                                                         </div>
                                                     
-                                       
+               
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h4>Would you like to see product details? </h4>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            <form action="layout4.html" >
+                                Click Yes for continue,else you can close this window<br><br>
+                            <input type="submit" name="Yes" value="Yes"/>
+                            
+                            </form>
+                        </div>
+                    </div>
+                </div>                        
 
     </body>
 </html>
