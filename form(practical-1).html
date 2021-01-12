@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Pratical Program - 1
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+        <form id="form" action="#">
+        
+        
+        <input type="text" name="name" placeholder="Enter your name"><br>
+      
+         <input type="text" name="string" placeholder="Enter any String"><br>
+        <button type="button" id="submit" name="submit" onclick="display()">Click Here</button>
+       </form>
+        <p id="val1"></p>
+      
+        <p id="val2"></p>
+
+        <script>  
+        function display() {
+        var x = document.getElementById("form").elements[0].value;
+         x = 'Hello ' + x;
+        var y = document.getElementById("form").elements[1].value;
+         y = 'Your String is : ' + y;
+        document.getElementById("val1").innerHTML = x;
+        document.getElementById("val2").innerHTML = y; 
+        }
+        </script>
+    
+
+</body>
+</html>
