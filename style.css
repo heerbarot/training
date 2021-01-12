@@ -1,4 +1,4 @@
-input[type=text], [type=submit] {
+input[type=text], [type=submit], [type=button] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -11,7 +11,7 @@ input[type=text], [type=submit] {
     color:mediumseagreen;
     
 }
-p{
+p, h1, a{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -22,4 +22,4 @@ p{
 body{
     background-color:teal;
 }
- 
+

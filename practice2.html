@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            Pratical Program - 2
+            Pratice Program - 2
         </title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -10,6 +10,7 @@
         <form id="form" action="#">
         <input type="text" name="string" placeholder="Enter a String with min 15 char length"><br>
         <button type="submit" id="submit" name="submit" onclick="display()">Click Here</button>
+        <label>// Open log console to see the output</label>
         </form>
       
       
@@ -20,18 +21,16 @@
                 alert("make sure the input string is min 15 char long");
             }
             else{
-                
                 var obj={};
                 var repeats=[];
                 str = textbox.toLowerCase();
-        
             
             for(x = 0, length = str.length; x < length; x++) {
                 var i = str.charAt(x)
                 obj[i] = (isNaN(obj[i]) ? 1 : obj[i] + 1);
             }
            
-             console.log(obj);
+            console.log(obj);
             }
 
             }

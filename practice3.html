@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Pratice Program - 3
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="deck">
+        <h1>A Deck of Cards</h1> 
+        <a href="javascript:void(0)" class="btn" onclick="shuffle()">   
+         <h4>Shuffle </h4></a> <label>//  Open log console to see the output</label>
+        <div id="deck"></div>
+    </div>
+
+    <script>
+        function shuffle(){
+        document.getElementById("deck").innerHTML = "";
+        const arr1 = ["Spades", "Diamonds", "Club", "Heart"];
+        const arr2 = ["Ace","2","3","4","5","6","7","8","9","10","Jack","Queen","King"];
+
+        let result = [];
+
+        for (let i = 0; i < arr1.length; i++) {
+            for (let x = 0; x < arr2.length; x++) {
+                let card = { val: arr2[x], suit: arr1[i] };
+                result.push(card);   // result = 52 cards (4 * 13)
+            }
+        }
+        let n = result.length - 1;  // n = 52
+        for (let i = n; i > 0; i--) 
+        {
+            let j = Math.floor(Math.random() * i);   // shuffling 
+            let temp = result[i];  // result[i] === result[j]
+            result[i] = result[j];
+            result[j] = temp;  
+        }
+
+        console.log('First Five Cards are:');
+        for (let i = 1; i <= 5; i++) {
+            console.log(`${result[i].val} of ${result[i].suit}`);   
+        }
+    }
+    </script>
+
+</body>
+</html>
