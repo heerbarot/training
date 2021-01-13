@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Callback Demo
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <script> 
+            let cleanRoom = function() {
+            return new Promise(function(resolve, reject) {
+                resolve('Cleaned The Room');
+            });
+            };
+
+            let removeGarbage = function(message) {
+            return new Promise(function(resolve, reject) {
+                resolve(message + ' remove Garbage');
+            });
+            };
+
+            let winIcecream = function(message) {
+            return new Promise(function(resolve, reject) {
+                
+                reject(message + ' loss ice cream');
+            });
+            };
+
+
+            cleanRoom().then(function(result){
+                return removeGarbage(result);
+            }).then(function(result){
+                return winIcecream(result);
+            }).then(function(result){
+                console.log('finished ' + result);
+            })
+
+            cleanRoom().then(function(result){
+                return removeGarbage(result);
+            }).then(function(result){
+                return winIcecream(result);
+            }).catch(function(result){
+                console.log('not finished ' + result);
+            })
+                    
+     </script> 
+</body>
+</html>
