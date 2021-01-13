@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+          Promise practice - 1
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <p>// Alert will display number after 1 second delay</p>
+    <script> 
+        new Promise(function(success, reject) {
+
+        setTimeout(() => success(1), 1000);
+
+        }).then(function(result) {
+
+        alert(result); // 1
+
+        return new Promise((success, reject) => { 
+        setTimeout(() => success(result * 2), 1000);
+        });
+
+        }).then(function(result) { 
+
+        alert(result); // 2
+
+        return new Promise((success, reject) => {
+        setTimeout(() => success(result * 2), 1000);
+        });
+
+        }).then(function(result) {
+
+        alert(result); // 4
+
+        return new Promise((success, reject) => {
+        setTimeout(() => success(result * 2), 1000);
+        });
+
+        }).then(function(result) {
+
+        alert(result); // 8
+
+        return new Promise((success, reject) => {
+        setTimeout(() => success(result * 2), 1000);
+        });
+
+        }).then(function(result) {
+
+        alert(result); // 16
+        
+        });
+    </script> 
+</body>
+</html>
