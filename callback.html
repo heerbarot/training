@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Callback Demo
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <script> 
+  
+        function add(a, b , addition){ 
+        var add = a + b;
+        document.write(`The sum of  ${a}  and  ${b}  is  ${add} ` + "<br><br>"); 
+        addition(); 
+        } 
+        
+        add(5,10,function disp(){ 
+        document.write('It will be print after addition'); 
+        }); 
+          
+     </script> 
+</body>
+</html>

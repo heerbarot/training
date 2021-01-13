@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            Callback Demo
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <p>//  Open log console to see the output</p>
+    <script> 
+  
+        const getIds = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                const downloadSuccessfull = true;
+                const recipeId = [838, 73838, 7638];
+                if(downloadSuccessfull){
+                    resolve(recipeId);
+                }else{
+                    reject('download failed 404');
+                }
+            }, 1500);
+        });
+
+        getIds.then(IDs=>{
+            console.log(IDs);
+        }).catch(error=>{
+            console.log(error);
+        });
+          
+     </script> 
+</body>
+</html>
