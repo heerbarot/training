@@ -33,7 +33,7 @@
         alert(result); // 4
 
         return new Promise((success, reject) => {
-        setTimeout(() => success(result * 2), 1000);
+        setTimeout(() => reject(result * 2), 1000);
         });
 
         }).then(function(result) {
@@ -41,7 +41,7 @@
         alert(result); // 8
 
         return new Promise((success, reject) => {
-        setTimeout(() => success(result * 2), 1000);
+        setTimeout(() => reject(result * 2), 1000);
         });
 
         }).then(function(result) {
@@ -49,6 +49,8 @@
         alert(result); // 16
         
         });
+
+        
     </script> 
 </body>
 </html>
