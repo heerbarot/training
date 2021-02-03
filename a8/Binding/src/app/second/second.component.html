@@ -1,0 +1,9 @@
+<div>
+    <b>CHILD COMPONENT - 2</b>
+    <p>{{str2}}</p>
+    <input type="button" (click)="send(str3)" value="Send Message to Child Component - 3"/>
+    <button (click)="sendParent(str5)">Send value to Parent</button>
+    <p>{{str4}}</p>
+
+</div>
+<app-third [str3]="str" (opToParent)="getVal($event)"></app-third>
